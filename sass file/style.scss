@@ -1,0 +1,26 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// === Header Search Option === //
+.search-option{
+    .select-option{
+        border-radius: 5px 0 0 5px;
+        border: none;
+        border-right: 1px solid gray;
+        max-width: 65px;
+    }
+    .header-search-input{
+        input[type="text"], button{
+            border:none;
+        }
+        button{
+           padding:.1em .6em;
+           font-size: 1.5rem;
+           border-radius: 0 5px 5px 0;
+        }
+    }
+}
+
