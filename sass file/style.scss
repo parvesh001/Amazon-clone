@@ -4,22 +4,59 @@
     box-sizing: border-box;
 }
 
-// === Header Search Option === //
+//site-logo
+.site-logo{
+    border: 1.5px solid black;
+    padding: 0.5em;
+    &:hover{
+        border: 1.5px solid white;
+    padding: .5em;
+    }
+    
+}
+
+//users-address
+.user-address{
+    border: 1.3px solid black;
+    padding: 0.5em;
+    &:hover{
+        border: 1.3px solid white;
+    padding: .5em;
+    }
+}
+
+//Header Search Option
 .search-option{
+    border-radius: 5px;
     .select-option{
         border-radius: 5px 0 0 5px;
         border: none;
         border-right: 1px solid gray;
-        max-width: 65px;
+        width: 75px;
+        padding: .5em;
+        &:focus{
+            width: auto;
+            border: 3px solid orange;
+            outline: none;
+        }
+        &:hover{
+            background: rgb(224, 221, 221)!important;
+        }
     }
     .header-search-input{
         input[type="text"], button{
             border:none;
         }
+        input[type="text"]{
+            &:focus{outline:none;}
+        }
         button{
            padding:.1em .6em;
            font-size: 1.5rem;
            border-radius: 0 5px 5px 0;
+           &:hover{
+            background: orange !important;
+           }
         }
     }
 }
