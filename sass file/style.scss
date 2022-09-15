@@ -6,22 +6,16 @@
 
 //site-logo
 .site-logo{
-    border: 1.5px solid black;
-    padding: 0.5em;
     &:hover{
-        border: 1.5px solid white;
-    padding: .5em;
+        border: 1px solid white !important;
     }
     
 }
 
 //users-address
 .user-address{
-    border: 1.3px solid black;
-    padding: 0.5em;
     &:hover{
-        border: 1.3px solid white;
-    padding: .5em;
+        border: 1px solid white !important;
     }
 }
 
@@ -61,3 +55,46 @@
     }
 }
 
+//choose-language
+.choose-language{
+    &:hover{
+        border:1px solid white!important;
+    }
+    .dropdown-menu{
+        .dropdown-item{
+            &.active{
+                color:orange;
+                text-decoration: underline;
+                background: none!important;
+            }
+            &.active > input[type="radio"]{
+                background-color:orange;
+                text-decoration: underline;
+            }
+            &:hover{
+                color:orange;
+                text-decoration: underline;
+            }
+            &:hover > input[type="radio"]{
+                background-color:orange;
+                text-decoration: underline;
+            }
+            input[type="radio"] {
+                /* remove standard background appearance */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                padding: 3px;
+                /* background-color only for content */
+                background-clip: content-box;
+                border: 2px solid #bbbbbb;
+                // background-color: #e7e6e7;
+                border-radius: 50%;
+              }
+        }
+    }
+    
+}

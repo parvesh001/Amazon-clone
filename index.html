@@ -24,11 +24,11 @@
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <!-- site-logo -->
-              <img src="images/amazon_PNG11.png" alt="site-logo" class="site-logo" style="width:110px">
+              <img src="images/amazon_PNG11.png" alt="site-logo" class="site-logo border border-1 border-dark p-2" style="width:110px">
               <!-- end site-logo -->
 
               <!-- users-address slot -->
-              <div class="user-address text-white d-flex">
+              <div class="user-address text-white d-flex border border-1 border-dark p-2">
                 <i class="fa-solid fa-location-dot align-self-end me-1"></i>
                 <div class="address-text lh-1">
                     <p class="text-secondary fw-bold text-capitalize m-0" style="font-size:smaller">
@@ -72,12 +72,35 @@
                 </form>
               </div>
               <!-- end search option -->
+
+              <!-- choose language -->
+              <div class="choose-language dropdown border border-1 border-dark p-1">
+                <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <p id="language" class="m-0 lh-sm" style="font-size:12px">English</p>
+                 <img src="images/india-flag-icon.svg" alt="indian-flag" style="width:22px">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li class="active dropdown-item d-flex align-items-center text-capitalize"><input type="radio" name="language" id="english" class="me-1">english</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">hindi</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">bengali</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">urdu</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">gujrati</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">tamil</li>
+                </ul>
+              </div>
+              <!-- end choose language -->
+             <div>lorem</div>
+             <div>lorem</div>
             </div>
           </nav>
           <!-- END NAV-BAR -->
     </header>
 
     <!-- JS LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- local js file -->
     <script src="JS file/main.js"></script>
 
 </body>

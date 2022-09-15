@@ -4,22 +4,12 @@
   box-sizing: border-box;
 }
 
-.site-logo {
-  border: 1.5px solid black;
-  padding: 0.5em;
-}
 .site-logo:hover {
-  border: 1.5px solid white;
-  padding: 0.5em;
+  border: 1px solid white !important;
 }
 
-.user-address {
-  border: 1.3px solid black;
-  padding: 0.5em;
-}
 .user-address:hover {
-  border: 1.3px solid white;
-  padding: 0.5em;
+  border: 1px solid white !important;
 }
 
 .search-option {
@@ -53,4 +43,39 @@
 }
 .search-option .header-search-input button:hover {
   background: orange !important;
+}
+
+.choose-language:hover {
+  border: 1px solid white !important;
+}
+.choose-language .dropdown-menu .dropdown-item.active {
+  color: orange;
+  text-decoration: underline;
+  background: none !important;
+}
+.choose-language .dropdown-menu .dropdown-item.active > input[type=radio] {
+  background-color: orange;
+  text-decoration: underline;
+}
+.choose-language .dropdown-menu .dropdown-item:hover {
+  color: orange;
+  text-decoration: underline;
+}
+.choose-language .dropdown-menu .dropdown-item:hover > input[type=radio] {
+  background-color: orange;
+  text-decoration: underline;
+}
+.choose-language .dropdown-menu .dropdown-item input[type=radio] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */
