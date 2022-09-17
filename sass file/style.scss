@@ -104,4 +104,37 @@
     &:hover{
         border:1px solid white!important;
     }
+    .dropdown-menu{
+        left: -250%;
+        min-width: 500px!important;
+
+        .dropdown-lists{
+            &::before{
+                content: "";
+                width: 90%;
+                text-align: center;
+                height: 1px;
+                opacity: 20%;
+                position: absolute;
+                top: -.5rem;
+                background-color: #bbbbbb;
+            }
+            .your-acc-list::before{
+               content: "";
+               width: 1px;
+               height: 100%;
+               position: absolute;
+               background-color: #bbbbbb;
+               left:-.5rem;
+               opacity: 20%;
+            }
+            p{
+                font-weight: 500;
+                &:hover{
+                    color: orange !important;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }

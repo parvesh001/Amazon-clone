@@ -82,4 +82,34 @@
 
 .sign-in:hover {
   border: 1px solid white !important;
+}
+.sign-in .dropdown-menu {
+  left: -250%;
+  min-width: 500px !important;
+}
+.sign-in .dropdown-menu .dropdown-lists::before {
+  content: "";
+  width: 90%;
+  text-align: center;
+  height: 1px;
+  opacity: 20%;
+  position: absolute;
+  top: -0.5rem;
+  background-color: #bbbbbb;
+}
+.sign-in .dropdown-menu .dropdown-lists .your-acc-list::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  background-color: #bbbbbb;
+  left: -0.5rem;
+  opacity: 20%;
+}
+.sign-in .dropdown-menu .dropdown-lists p {
+  font-weight: 500;
+}
+.sign-in .dropdown-menu .dropdown-lists p:hover {
+  color: orange !important;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
