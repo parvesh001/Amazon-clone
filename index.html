@@ -30,222 +30,297 @@
   </head>
   <body>
     <header>
-      <!-- NAV-BAR -->
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- site-logo -->
-          <img
-            src="images/amazon_PNG11.png"
-            alt="site-logo"
-            class="site-logo border border-1 border-dark p-2"
-            style="width: 110px"
-          />
-          <!-- end site-logo -->
-
-          <!-- users-address slot -->
-          <div
-            class="user-address text-white d-flex border border-1 border-dark p-2"
-          >
-            <i class="fa-solid fa-location-dot align-self-end me-1"></i>
-            <div class="address-text lh-1">
-              <p
-                class="text-secondary fw-bold text-capitalize m-0"
-                style="font-size: smaller"
-              >
-                hello
-              </p>
-              <p class="text-capitalize m-0">select your address</p>
-            </div>
-          </div>
-          <!-- end users-address slot -->
-
-          <!-- search option -->
-          <div id="search-option" class="search-option d-flex">
-            <select
-              id="select-option"
-              class="select-option text-center text-secondary text-capitalize bg-light text-dark"
-            >
-              <option class="option" value="all">all</option>
-              <option class="option" value="shoes">shoes</option>
-              <option class="option" value="iPhone">iPhone</option>
-              <option class="option" value="mobiles">mobiles</option>
-              <option class="option" value="laptop">laptop</option>
-              <option class="option" value="handset">handset</option>
-              <option class="option" value="tv">tv</option>
-              <option class="option" value="fridge">fridge</option>
-              <option class="option" value="washing machine">
-                washing machine
-              </option>
-              <option class="option" value="shampoo">shampoo</option>
-              <option class="option" value="oils">oils</option>
-              <option class="option" value="soaps">soaps</option>
-              <option class="option" value="gym gears">gym gears</option>
-              <option class="option" value="utincels">utincels</option>
-              <option class="option" value="support">support</option>
-              <option class="option" value="two wheelers">two wheelers</option>
-              <option class="option" value="four wheelers">
-                four wheelers
-              </option>
-              <option class="option" value="toys">toys</option>
-              <option class="option" value="hand bags">hand bags</option>
-              <option class="option" value="school bags">school bags</option>
-              <option class="option" value="books">books</option>
-              <option class="option" value="stationary">stationary</option>
-              <option class="option" value="underwears">underwears</option>
-            </select>
-            <form class="d-flex header-search-input">
-              <input type="text" name="search" id="search" />
-              <button type="button" class="bg-warning">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </form>
-          </div>
-          <!-- end search option -->
-
-          <!-- choose language -->
-          <div class="choose-language dropdown border border-1 border-dark p-1">
-            <div
-              class="dropdown-toggle text-white text-decoration-none"
-              href="#"
-              role="button"
-              id="dropdownMenuLink"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <p id="language" class="m-0" style="font-size: 12px; line-height: 5px;">
-                English
-              </p>
+      <!-- Main NAV-BAR -->
+      <nav class="navbar-dark bg-dark pb-md-2 pt-md-2 container-fluid">
+          <!-- Main nav-bar-row -->
+          <div class="row">
+            <!-- first col -->
+            <div class="col col-3 d-flex pe-0">
+              <!-- site-logo -->
               <img
-                src="images/india-flag-icon.svg"
-                alt="indian-flag"
-                style="width: 22px"
+                src="images/amazon_PNG11.png"
+                alt="site-logo"
+                class="site-logo border border-1 border-dark p-2"
+                style="width: 150px; height: 50px"
               />
-            </div>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li
-                class="active dropdown-item d-flex align-items-center text-capitalize"
-              >
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />english
-              </li>
-              <li class="dropdown-item text-capitalize">
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />hindi
-              </li>
-              <li class="dropdown-item text-capitalize">
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />bengali
-              </li>
-              <li class="dropdown-item text-capitalize">
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />urdu
-              </li>
-              <li class="dropdown-item text-capitalize">
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />gujrati
-              </li>
-              <li class="dropdown-item text-capitalize">
-                <input
-                  type="radio"
-                  name="language"
-                  id="english"
-                  class="me-1"
-                />tamil
-              </li>
-            </ul>
-          </div>
-          <!-- end choose language -->
+              <!-- end site-logo -->
 
-          <!-- sign in + account & list -->
-          <div class="sign-in dropdown border border-1 border-dark p-1">
-            <div
-              class="text-white dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <p
-                class="text-capitalize m-0"
-                style="font-size: small; line-height: 5px"
+              <!-- users-address slot -->
+              <div
+                class="user-address text-white d-flex border border-1 border-dark p-2 text-nowrap"
               >
-                hello, sign in
-              </p>
-              <h6 class="text-capitalize m-0 d-inline">account & lists</h6>
-            </div>
-            <ul
-              class="dropdown-menu"
-              aria-labelledby="dropdownMenuButton1">
-              <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-warning border border-1 border-dark" type="button">Sign in</button>
-              </div>
-              <p class="text-capitalize text-center text-secondary" style="font-size: small">
-                new customer?
-                <a href="#" class="text-decoration-none">start here.</a>
-              </p>
-              <div class="dropdown-lists position-relative container">
-                <div class="row row-col-2">
-                  <div class="col">
-                    <h6 class="text-capitalize fw-bold">your lists</h6>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Create a Wish List</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Wish from Any Website</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Baby Wishlist</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Discover Your Style</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Explore Showroom</a></p>
-                  </div>
-                  <div class="your-acc-list col position-relative">
-                    <h6 class="text-capitalize fw-bold"><a>your account</a></h6>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Account</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Orders</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Wish List</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Recommendations</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Prime Membership</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Subscribe & Save Items</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Memberships & Subscriptions</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Your Amazon Business Account</a></p>
-                    <p class="m-0 text-secondary" style="font-size:small"></p>
-                    <p class="m-0 text-secondary" style="font-size:small"><a>Manage Your Content and Devices</a></p>
-                  </div>
+                <i
+                  class="fa-solid fa-location-dot align-self-center pb-2 me-1"
+                ></i>
+                <div class="address-text lh-1">
+                  <p
+                    class="text-secondary fw-bold text-capitalize m-0"
+                    style="font-size: smaller"
+                  >
+                    hello
+                  </p>
+                  <p class="text-capitalize m-0">select your address</p>
                 </div>
               </div>
-            </ul>
-          </div>
-          <!-- end sign in + account & list -->
-          
-          <!-- orders & return -->
-          <a href="#" class="orders-returns text-decoration-none text-white text-capitalize d-flex flex-column border border-1 border-dark p-1">
-            <span style="font-size:small; line-height: 5px;">returns</span>
-            <span>& orders</span>
-          </a>
-          <!-- end orders & return -->
+              <!-- end users-address slot -->
+            </div>
+            <!-- end first col -->
 
-          <!-- main nav-bar cart -->
-          <a href="#" class="main-cart p-1 text-white text-decoration-none border border-1 border-dark"><i class="fa-solid fa-cart-shopping fs-2"></i> <span class="fs-6">cart</span></a>
-          <!-- end main nav-bar cart -->
-        </div>
+            <!-- second col -->
+            <div class="col col-6 p-0">
+              <!-- search option -->
+              <div id="search-option" class="search-option d-flex">
+                <select
+                  id="select-option"
+                  class="select-option text-center text-secondary text-capitalize bg-light text-dark"
+                >
+                  <option class="option" value="all">all</option>
+                  <option class="option" value="shoes">shoes</option>
+                  <option class="option" value="iPhone">iPhone</option>
+                  <option class="option" value="mobiles">mobiles</option>
+                  <option class="option" value="laptop">laptop</option>
+                  <option class="option" value="handset">handset</option>
+                  <option class="option" value="tv">tv</option>
+                  <option class="option" value="fridge">fridge</option>
+                  <option class="option" value="washing machine">
+                    washing machine
+                  </option>
+                  <option class="option" value="shampoo">shampoo</option>
+                  <option class="option" value="oils">oils</option>
+                  <option class="option" value="soaps">soaps</option>
+                  <option class="option" value="gym gears">gym gears</option>
+                  <option class="option" value="utincels">utincels</option>
+                  <option class="option" value="support">support</option>
+                  <option class="option" value="two wheelers">
+                    two wheelers
+                  </option>
+                  <option class="option" value="four wheelers">
+                    four wheelers
+                  </option>
+                  <option class="option" value="toys">toys</option>
+                  <option class="option" value="hand bags">hand bags</option>
+                  <option class="option" value="school bags">
+                    school bags
+                  </option>
+                  <option class="option" value="books">books</option>
+                  <option class="option" value="stationary">stationary</option>
+                  <option class="option" value="underwears">underwears</option>
+                </select>
+                <form class="d-flex header-search-input">
+                  <input type="text" name="search" id="search" />
+                  <button type="button" class="bg-warning">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- end search option -->
+            </div>
+            <!-- end second col -->
+
+            <!-- third col -->
+            <div class="col col-3 d-flex pe-0 justify-content-between align-items-center">
+              <!-- choose language -->
+              <div
+                class="choose-language dropdown border border-1 border-dark p-1"
+              >
+                <div
+                  class="dropdown-toggle text-white text-decoration-none"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <p
+                    id="language"
+                    class="m-0"
+                    style="font-size: 12px; line-height: 5px"
+                  >
+                    English
+                  </p>
+                  <img
+                    src="images/india-flag-icon.svg"
+                    alt="indian-flag"
+                    style="width: 22px"
+                  />
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li
+                    class="active dropdown-item d-flex align-items-center text-capitalize"
+                  >
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />english
+                  </li>
+                  <li class="dropdown-item text-capitalize">
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />hindi
+                  </li>
+                  <li class="dropdown-item text-capitalize">
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />bengali
+                  </li>
+                  <li class="dropdown-item text-capitalize">
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />urdu
+                  </li>
+                  <li class="dropdown-item text-capitalize">
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />gujrati
+                  </li>
+                  <li class="dropdown-item text-capitalize">
+                    <input
+                      type="radio"
+                      name="language"
+                      id="english"
+                      class="me-1"
+                    />tamil
+                  </li>
+                </ul>
+              </div>
+              <!-- end choose language -->
+
+              <!-- sign in + account & list -->
+              <div class="sign-in dropdown border border-1 border-dark p-1">
+                <div
+                  class="text-white dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <p
+                    class="text-capitalize m-0"
+                    style="font-size: small; line-height: 5px"
+                  >
+                    hello, sign in
+                  </p>
+                  <h6 class="text-capitalize m-0 d-inline">account & lists</h6>
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button
+                      class="btn btn-warning border border-1 border-dark"
+                      type="button"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                  <p
+                    class="text-capitalize text-center text-secondary"
+                    style="font-size: small"
+                  >
+                    new customer?
+                    <a href="#" class="text-decoration-none">start here.</a>
+                  </p>
+                  <div class="dropdown-lists position-relative container">
+                    <div class="row row-col-2">
+                      <div class="col">
+                        <h6 class="text-capitalize fw-bold">your lists</h6>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Create a Wish List</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Wish from Any Website</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Baby Wishlist</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Discover Your Style</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Explore Showroom</a>
+                        </p>
+                      </div>
+                      <div class="your-acc-list col position-relative">
+                        <h6 class="text-capitalize fw-bold">
+                          <a>your account</a>
+                        </h6>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Account</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Orders</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Wish List</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Recommendations</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Prime Membership</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Subscribe & Save Items</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Memberships & Subscriptions</a>
+                        </p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Your Amazon Business Account</a>
+                        </p>
+                        <p
+                          class="m-0 text-secondary"
+                          style="font-size: small"
+                        ></p>
+                        <p class="m-0 text-secondary" style="font-size: small">
+                          <a>Manage Your Content and Devices</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <!-- end sign in + account & list -->
+
+              <!-- orders & return -->
+              <a
+                href="#"
+                class="orders-returns text-decoration-none text-white text-capitalize d-flex flex-column border border-1 border-dark p-1"
+              >
+                <span style="font-size: small; line-height: 5px">returns</span>
+                <span>& orders</span>
+              </a>
+              <!-- end orders & return -->
+
+              <!-- end main nav-bar cart -->
+              <a
+                href="#"
+                class="main-cart p-1 text-white text-decoration-none border border-1 border-dark"
+                ><i class="fa-solid fa-cart-shopping fs-2"></i>
+                <span class="fs-6">cart</span></a
+              >
+              <!-- end main nav-bar cart -->
+            </div>
+            <!-- end third col -->
+          </div>
+          <!-- end main nav-bar row -->
       </nav>
       <!-- END NAV-BAR -->
     </header>
+
+    
 
     <!-- JS LINK -->
     <script

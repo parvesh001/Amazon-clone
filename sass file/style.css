@@ -19,24 +19,31 @@
   border-radius: 5px 0 0 5px;
   border: none;
   border-right: 1px solid gray;
-  width: 75px;
+  width: 10% !important;
   padding: 0.5em;
 }
 .search-option .select-option:focus {
-  width: auto;
+  width: auto !important;
   border: 3px solid orange;
   outline: none;
 }
 .search-option .select-option:hover {
   background: rgb(224, 221, 221) !important;
 }
+.search-option .header-search-input {
+  width: 90%;
+}
 .search-option .header-search-input input[type=text], .search-option .header-search-input button {
   border: none;
+}
+.search-option .header-search-input input[type=text] {
+  width: 90%;
 }
 .search-option .header-search-input input[type=text]:focus {
   outline: none;
 }
 .search-option .header-search-input button {
+  width: 10%;
   padding: 0.1em 0.6em;
   font-size: 1.5rem;
   border-radius: 0 5px 5px 0;

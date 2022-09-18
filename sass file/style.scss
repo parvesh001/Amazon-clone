@@ -26,10 +26,10 @@
         border-radius: 5px 0 0 5px;
         border: none;
         border-right: 1px solid gray;
-        width: 75px;
+        width: 10%!important;
         padding: .5em;
         &:focus{
-            width: auto;
+            width: auto!important;
             border: 3px solid orange;
             outline: none;
         }
@@ -38,13 +38,16 @@
         }
     }
     .header-search-input{
+        width: 90%;
         input[type="text"], button{
             border:none;
         }
         input[type="text"]{
+            width: 90%;
             &:focus{outline:none;}
         }
         button{
+            width: 10%;
            padding:.1em .6em;
            font-size: 1.5rem;
            border-radius: 0 5px 5px 0;
