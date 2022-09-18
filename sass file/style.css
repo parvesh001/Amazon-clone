@@ -84,7 +84,7 @@
   border: 1px solid white !important;
 }
 .sign-in .dropdown-menu {
-  left: -250%;
+  left: -200%;
   min-width: 500px !important;
 }
 .sign-in .dropdown-menu .dropdown-lists::before {
@@ -112,4 +112,12 @@
 .sign-in .dropdown-menu .dropdown-lists p:hover {
   color: orange !important;
   text-decoration: underline;
+}
+
+.orders-returns:hover {
+  border: 1px solid white !important;
+}
+
+.main-cart:hover {
+  border: 1px solid white !important;
 }/*# sourceMappingURL=style.css.map */

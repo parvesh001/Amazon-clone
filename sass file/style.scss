@@ -105,7 +105,7 @@
         border:1px solid white!important;
     }
     .dropdown-menu{
-        left: -250%;
+        left: -200%;
         min-width: 500px!important;
 
         .dropdown-lists{
@@ -137,4 +137,14 @@
             }
         }
     }
+}
+
+.orders-returns{
+    &:hover{
+        border:1px solid white!important;
+    }
+}
+
+.main-cart:hover{
+    border: 1px solid white!important;
 }
