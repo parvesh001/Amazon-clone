@@ -4,150 +4,44 @@
     box-sizing: border-box;
 }
 
-//site-logo
-.site-logo{
-    &:hover{
-        border: 1px solid white !important;
-    }
-    
+a{
+	text-decoration: none;
+	color:white;
 }
 
-//users-address
-.user-address{
-    &:hover{
-        border: 1px solid white !important;
-    }
+body{
+	color:white;
 }
 
-//Header Search Option
-.search-option{
-    border-radius: 5px;
-    .select-option{
-        border-radius: 5px 0 0 5px;
-        border: none;
-        border-right: 1px solid gray;
-        width: 10%!important;
-        padding: .5em;
-        &:focus{
-            width: auto!important;
-            border: 3px solid orange;
-            outline: none;
-        }
-        &:hover{
-            background: rgb(224, 221, 221)!important;
-        }
-    }
-    .header-search-input{
-        width: 90%;
-        input[type="text"], button{
-            border:none;
-        }
-        input[type="text"]{
-            width: 90%;
-            &:focus{outline:none;}
-        }
-        button{
-            width: 10%;
-           padding:.1em .6em;
-           font-size: 1.5rem;
-           border-radius: 0 5px 5px 0;
-           &:hover{
-            background: orange !important;
-           }
-        }
-    }
-}
-
-//choose-language
-.choose-language{
-    &:hover{
-        border:1px solid white!important;
-    }
-    .dropdown-menu{
-        .dropdown-item{
-            &.active{
-                color:orange;
-                text-decoration: underline;
-                background: none!important;
-            }
-            &.active > input[type="radio"]{
-                background-color:orange;
-                text-decoration: underline;
-            }
-            &:hover{
-                color:orange;
-                text-decoration: underline;
-            }
-            &:hover > input[type="radio"]{
-                background-color:orange;
-                text-decoration: underline;
-            }
-            input[type="radio"] {
-                /* remove standard background appearance */
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                padding: 3px;
-                /* background-color only for content */
-                background-clip: content-box;
-                border: 2px solid #bbbbbb;
-                // background-color: #e7e6e7;
-                border-radius: 50%;
-              }
-        }
-    }
-    
-}
-
-//sign-in
-.sign-in{
-    &:hover{
-        border:1px solid white!important;
-    }
-    .dropdown-menu{
-        left: -200%;
-        min-width: 500px!important;
-
-        .dropdown-lists{
-            &::before{
-                content: "";
-                width: 90%;
-                text-align: center;
-                height: 1px;
-                opacity: 20%;
-                position: absolute;
-                top: -.5rem;
-                background-color: #bbbbbb;
-            }
-            .your-acc-list::before{
-               content: "";
-               width: 1px;
-               height: 100%;
-               position: absolute;
-               background-color: #bbbbbb;
-               left:-.5rem;
-               opacity: 20%;
-            }
-            p{
-                font-weight: 500;
-                &:hover{
-                    color: orange !important;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-.orders-returns{
-    &:hover{
-        border:1px solid white!important;
-    }
-}
-
-.main-cart:hover{
-    border: 1px solid white!important;
+.header{
+	height: 6rem;
+	background-color:rgb(44, 44, 62);
+	.nav-belt{
+		height:65%;
+		.nav-belt-left{
+			.logo{
+				width: 110px;
+				padding:6px;
+				&:hover{
+					border:1px solid #fff!important;
+					cursor: pointer;
+				}
+			}
+			.user-address{
+				padding:6px;
+				&:hover{
+					border:1px solid #fff!important;
+					cursor: pointer;
+					color:#fff;
+				}
+				span:first-of-type{
+					font-size: 12px;
+					font-weight: 500;
+					color:rgb(211, 211, 211);
+				}
+			}
+			
+		}
+		
+	}
 }
