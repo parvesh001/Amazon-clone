@@ -19,16 +19,21 @@ body{
 	.nav-belt{
 		height:65%;
 		.nav-belt-left{
+			padding:5px;
 			.logo{
 				width: 110px;
-				padding:6px;
+				@media  screen and (max-width:910px) {
+					&{
+						width: 90px;
+					}
+				}
 				&:hover{
 					border:1px solid #fff!important;
 					cursor: pointer;
 				}
 			}
 			.user-address{
-				padding:6px;
+		
 				&:hover{
 					border:1px solid #fff!important;
 					cursor: pointer;
@@ -38,10 +43,49 @@ body{
 					font-size: 12px;
 					font-weight: 500;
 					color:rgb(211, 211, 211);
+
 				}
 			}
 			
 		}
-		
+	}
+
+	.nav-belt-middle{
+		padding:5px;
+         .form-select{
+			border-radius: 0;
+			border:none;
+			padding: 5px 10px!important;
+			font-size: small!important;
+			font-weight: 500;
+			&:focus{
+				outline: none !important;
+                box-shadow: none !important;
+			}
+			option{
+				font-size: medium!important;
+			}
+			
+		 }
 	}
 }
+
+@media screen and(max-width:910px) {
+	.nav-belt-left{
+        padding:4px;
+		.user-address{
+			span:first-of-type{
+				font-size: 10px!important;
+			}
+			span:nth-child(2){
+				font-size: 14px;
+			}
+		}
+	}
+
+	.nav-belt-middle{
+		padding: 4px!important;
+	}
+	
+}
+

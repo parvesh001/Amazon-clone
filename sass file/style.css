@@ -20,16 +20,20 @@ body {
 .header .nav-belt {
   height: 65%;
 }
+.header .nav-belt .nav-belt-left {
+  padding: 5px;
+}
 .header .nav-belt .nav-belt-left .logo {
   width: 110px;
-  padding: 6px;
+}
+@media screen and (max-width: 910px) {
+  .header .nav-belt .nav-belt-left .logo {
+    width: 90px;
+  }
 }
 .header .nav-belt .nav-belt-left .logo:hover {
   border: 1px solid #fff !important;
   cursor: pointer;
-}
-.header .nav-belt .nav-belt-left .user-address {
-  padding: 6px;
 }
 .header .nav-belt .nav-belt-left .user-address:hover {
   border: 1px solid #fff !important;
@@ -40,4 +44,36 @@ body {
   font-size: 12px;
   font-weight: 500;
   color: rgb(211, 211, 211);
+}
+.header .nav-belt-middle {
+  padding: 5px;
+}
+.header .nav-belt-middle .form-select {
+  border-radius: 0;
+  border: none;
+  padding: 5px 10px !important;
+  font-size: small !important;
+  font-weight: 500;
+}
+.header .nav-belt-middle .form-select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.header .nav-belt-middle .form-select option {
+  font-size: medium !important;
+}
+
+@media screen and (max-width: 910px) {
+  .nav-belt-left {
+    padding: 4px;
+  }
+  .nav-belt-left .user-address span:first-of-type {
+    font-size: 10px !important;
+  }
+  .nav-belt-left .user-address span:nth-child(2) {
+    font-size: 14px;
+  }
+  .nav-belt-middle {
+    padding: 4px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

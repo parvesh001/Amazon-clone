@@ -31,7 +31,7 @@
   <body>
     <header class="header w-100 d-flex flex-column">
       <!-- nav-belt -->
-      <nav class="nav-belt bg-dark d-flex p-2">
+      <nav class="nav-belt bg-dark d-flex p-lg-2 p-1">
         <!-- nav-belt-left -->
         <div class="nav-belt-left d-flex align-items-center">
           <!-- logo -->
@@ -40,7 +40,7 @@
           </div>
           <!-- end logo -->
           <!-- address -->
-          <a href="#" class="user-address d-flex ms-4 border border-1 border-dark">
+          <a href="#" class="user-address d-flex border border-1 border-dark ms-lg-3 ms-2">
              <div class="align-self-end me-1"><i class="fa-solid fa-location-dot"></i></div>
              <div class="d-flex flex-column lh-sm text-capitalize">
               <span>hello</span>
@@ -50,6 +50,20 @@
           <!-- end address -->
         </div>
         <!-- end nav-belt-left -->
+
+        <!-- nav-belt-middle -->
+        <div class="nav-belt-middle d-flex ms-lg-3 ms-2 align-items-center">
+          <div class="select-opt d-flex">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>All</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          
+        </div>
+        <!-- end nav-belt-middle -->
       </nav>
       <!-- end nav-belt -->
       <nav class="main-nav"></nav>
