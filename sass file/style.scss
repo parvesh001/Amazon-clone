@@ -22,11 +22,6 @@ body{
 			padding:5px;
 			.logo{
 				width: 110px;
-				@media  screen and (max-width:910px) {
-					&{
-						width: 90px;
-					}
-				}
 				&:hover{
 					border:1px solid #fff!important;
 					cursor: pointer;
@@ -51,41 +46,38 @@ body{
 	}
 
 	.nav-belt-middle{
-		padding:5px;
-         .form-select{
-			border-radius: 0;
-			border:none;
-			padding: 5px 10px!important;
-			font-size: small!important;
-			font-weight: 500;
-			&:focus{
-				outline: none !important;
-                box-shadow: none !important;
+		.nav-form{
+			border-radius: 5px;
+			overflow: hidden;
+			.form-select{
+				border-radius:0 !important;
+				border: none !important;
+				position:relative;
+				padding: 8px 31px 6px 6px!important;
+				background-color: rgb(235, 235, 235);
+				background-size: .6rem!important;
+				&:focus{
+					outline: none!important;
+					box-shadow: none!important;
+					border: none !important;
+				}
 			}
-			option{
-				font-size: medium!important;
+			.search-optn > input{
+				border:none;
+				text-indent: 8px;
+				&:focus{
+					outline:none;
+				}
 			}
-			
-		 }
-	}
-}
-
-@media screen and(max-width:910px) {
-	.nav-belt-left{
-        padding:4px;
-		.user-address{
-			span:first-of-type{
-				font-size: 10px!important;
-			}
-			span:nth-child(2){
-				font-size: 14px;
+			.btn{
+				border-radius: 0!important;
+				&:focus{
+					outline: none!important;
+					box-shadow: none!important;
+					border: none !important;
+				}
 			}
 		}
 	}
-
-	.nav-belt-middle{
-		padding: 4px!important;
-	}
 	
 }
-
