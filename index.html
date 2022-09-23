@@ -31,7 +31,7 @@
   <body>
     <header class="header w-100 d-flex flex-column">
       <!-- nav-belt -->
-      <nav class="nav-belt bg-dark d-flex p-lg-2 p-1">
+      <nav class="nav-belt bg-dark d-flex p-lg-2 p-1 fw-bold">
         <!-- nav-belt-left -->
         <div class="nav-belt-left d-flex align-items-center">
           <!-- logo -->
@@ -42,9 +42,9 @@
           <!-- address -->
           <a href="#" class="user-address d-flex border border-1 border-dark ms-lg-3 ms-2">
              <div class="align-self-end me-1"><i class="fa-solid fa-location-dot"></i></div>
-             <div class="d-flex flex-column lh-sm text-capitalize">
+             <div class="d-flex flex-column text-capitalize">
               <span>hello</span>
-              <span class="fw-bold">select your address</span>
+              <span class="fw-bold" style="line-height:60%">select your address</span>
              </div>
           </a>
           <!-- end address -->
@@ -52,8 +52,8 @@
         <!-- end nav-belt-left -->
 
         <!-- nav-belt-middle -->
-        <div class="nav-belt-middle ms-lg-3 ms-2">
-          <div class="nav-search">
+        <div class="nav-belt-middle ms-lg-3 ms-2 d-flex align-items-center">
+          <div class="nav-search d-flex">
             <form class="nav-form d-flex">
               <div class="select-optn">
                 <select name="countries" id="countries" class="form-select d-flex">
@@ -65,7 +65,7 @@
                 </select>
               </div>
               <div class="search-optn d-flex">
-                <input type="text" name="search-country" id="search-country">
+                <input type="text" class="w-100" name="search-country" id="search-country">
               </div>
               <div class="search-btn">
                 <button class="btn btn-warning">search</button>
@@ -74,6 +74,53 @@
           </div>
         </div>
         <!-- end nav-belt-middle -->
+
+        <!-- nav-belt-right -->
+        <div class="nav-belt-right d-flex align-items-center ms-lg-3 ms-2">
+          <!-- select-language -->
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/india-flag-icon.svg" alt="" width="20px">
+              <span>EN</span> 
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <!-- end select-language -->
+
+          <!-- sign-in -->
+          <div class="dropdown ms-lg-3 ms-2">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="d-block" style="font-size:small; font-weight:400;line-height: 20%;">Hello,sing in</span>
+              <span>Accounts & Lists</span>
+            </a>
+          
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <!-- end sign-in -->
+
+          <!-- order & returns -->
+          <a href="#" class="d-flex flex-column ms-lg-3 ms-2">
+            <span style="font-size:small; font-weight:400;line-height:20%">Returns</span>
+            <span>& Orders</span>
+          </a>
+          <!-- end order & returns -->
+
+          <!-- view cart -->
+          <a href="#" class="ms-lg-3 ms-2 fs-2">
+            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+          </a>
+          <!-- end view cart -->
+        </div>
+        <!-- end nav-belt-right -->
       </nav>
       <!-- end nav-belt -->
       <nav class="main-nav"></nav>
