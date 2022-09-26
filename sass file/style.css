@@ -8,27 +8,32 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  color: #fff;
+}
 
 body {
   color: white;
 }
 
 .header {
-  height: 6rem;
+  font-size: 14px;
+  height: 6.8rem;
   background-color: rgb(44, 44, 62);
 }
 .header .nav-belt {
   height: 65%;
 }
-.header .nav-belt .nav-belt-left {
-  padding: 5px;
-}
 .header .nav-belt .nav-belt-left .logo {
   width: 110px;
+  padding: 0.5rem;
 }
 .header .nav-belt .nav-belt-left .logo:hover {
   border: 1px solid #fff !important;
   cursor: pointer;
+}
+.header .nav-belt .nav-belt-left .user-address {
+  padding: 0.5rem;
 }
 .header .nav-belt .nav-belt-left .user-address:hover {
   border: 1px solid #fff !important;
@@ -63,6 +68,7 @@ body {
   padding: 8px 31px 6px 6px !important;
   background-color: rgb(235, 235, 235);
   background-size: 0.6rem !important;
+  height: 100%;
 }
 .header .nav-belt-middle .nav-search .nav-form .select-optn .form-select:focus {
   outline: none !important;
@@ -76,15 +82,125 @@ body {
 .header .nav-belt-middle .nav-search .nav-form .search-optn input {
   border: none;
   text-indent: 8px;
+  padding: 11px;
 }
 .header .nav-belt-middle .nav-search .nav-form .search-optn input:focus {
   outline: none;
 }
 .header .nav-belt-middle .nav-search .nav-form .search-btn .btn {
   border-radius: 0 !important;
+  height: 100%;
 }
 .header .nav-belt-middle .nav-search .nav-form .search-btn .btn:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
+}
+.header .nav-belt-right .dropdown {
+  border: 1px solid rgb(39, 39, 39);
+  padding: 0.5rem;
+}
+.header .nav-belt-right .dropdown:hover {
+  border: 1px solid white !important;
+  color: #fff;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-row p {
+  margin: 0;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-row p:hover > a {
+  cursor: pointer;
+  color: orange !important;
+  text-decoration: underline;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item {
+  background: none !important;
+  color: black !important;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover {
+  color: orange !important;
+  text-decoration: underline;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover input[type=radio] {
+  background-color: orange;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active {
+  color: orange !important;
+  text-decoration: underline;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active input[type=radio] {
+  background-color: orange;
+}
+.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item input[type=radio] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  border-radius: 50%;
+}
+.header .nav-belt-right .dropdown .language {
+  width: 300px !important;
+  top: 0.6rem !important;
+}
+.header .nav-belt-right .dropdown .sign-in {
+  width: 500px !important;
+  top: 0.7rem !important;
+  left: 8rem !important;
+}
+.header .nav-belt-right .nav-cart, .header .nav-belt-right .nav-order {
+  padding: 0.5rem;
+}
+.header .nav-belt-right .nav-cart:hover, .header .nav-belt-right .nav-order:hover {
+  border: 1px solid #fff !important;
+}
+
+@media screen and (min-width: 620px) and (max-width: 920px) {
+  .header {
+    height: 4.5rem;
+    font-size: 13px !important;
+  }
+  .logo {
+    width: 90px !important;
+    padding: 0.3rem !important;
+  }
+  .user-address {
+    padding: 0.3rem !important;
+  }
+  .user-address span:first-of-type {
+    font-size: 11px !important;
+  }
+  .user-address span:nth-child(2) {
+    font-size: 13px !important;
+    white-space: nowrap;
+  }
+  .form-select {
+    height: 100%;
+    font-size: 13px !important;
+  }
+  .search-optn input {
+    padding: 5px !important;
+  }
+  .search-btn .btn {
+    border-radius: 0 !important;
+    height: 100%;
+    font-size: 13px !important;
+  }
+  .dropdown {
+    padding: 0.3rem !important;
+    font-size: 13px !important;
+  }
+  .dropdown #dropdown-menu {
+    width: 400px !important;
+    top: 0.35rem !important;
+  }
+  .nav-order, .nav-cart {
+    padding: 0.3rem !important;
+    white-space: nowrap;
+  }
 }/*# sourceMappingURL=style.css.map */

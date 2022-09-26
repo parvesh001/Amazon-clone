@@ -31,7 +31,7 @@
   <body>
     <header class="header w-100 d-flex flex-column">
       <!-- nav-belt -->
-      <nav class="nav-belt bg-dark d-flex p-lg-2 p-1 fw-bold">
+      <nav class="nav-belt bg-dark d-flex fw-bold">
         <!-- nav-belt-left -->
         <div class="nav-belt-left d-flex align-items-center">
           <!-- logo -->
@@ -40,8 +40,8 @@
           </div>
           <!-- end logo -->
           <!-- address -->
-          <a href="#" class="user-address d-flex border border-1 border-dark ms-lg-3 ms-2">
-             <div class="align-self-end me-1"><i class="fa-solid fa-location-dot"></i></div>
+          <a href="#" class="user-address d-flex border border-1 border-dark ms-lg-1">
+             <div class="align-self-end me-1 mt-2"><i class="fa-solid fa-location-dot"></i></div>
              <div class="d-flex flex-column text-capitalize">
               <span>hello</span>
               <span class="fw-bold" style="line-height:60%">select your address</span>
@@ -52,23 +52,23 @@
         <!-- end nav-belt-left -->
 
         <!-- nav-belt-middle -->
-        <div class="nav-belt-middle ms-lg-3 ms-2 d-flex align-items-center">
+        <div class="nav-belt-middle ps-lg-2 ps-1 d-flex align-items-center">
           <div class="nav-search d-flex">
             <form class="nav-form d-flex">
               <div class="select-optn">
-                <select name="countries" id="countries" class="form-select d-flex">
-                  <option value="India">India</option>
-                  <option value="India">India</option>
-                  <option value="India">India</option>
-                  <option value="India">India</option>
-                  <option value="India">India</option>
+                <select name="countries" id="countries" class="form-select d-flex text-center text-capitalize">
+                  <option value="All">All</option>
+                  <option value="India">Shoes</option>
+                  <option value="India">face wash</option>
+                  <option value="India">comb</option>
+                  <option value="India">cloths</option>
                 </select>
               </div>
               <div class="search-optn d-flex">
                 <input type="text" class="w-100" name="search-country" id="search-country">
               </div>
               <div class="search-btn">
-                <button class="btn btn-warning">search</button>
+                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
           </div>
@@ -84,10 +84,13 @@
               <span>EN</span> 
             </a>
           
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="language dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li class="active dropdown-item d-flex align-items-center text-capitalize"><input type="radio" name="language" id="english" class="me-1">english</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">hindi</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">bengali</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">urdu</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">gujrati</li>
+                  <li class="dropdown-item text-capitalize"><input type="radio" name="language" id="english" class="me-1">tamil</li>
             </ul>
           </div>
           <!-- end select-language -->
@@ -99,24 +102,56 @@
               <span>Accounts & Lists</span>
             </a>
           
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul id="dropdown-menu" class="sign-in dropdown-menu text-capitalize" aria-labelledby="dropdownMenuLink">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <div class="d-grid gap-2 col-lg-6 col-8 mx-auto">
+                    <button class="btn btn-warning" type="button">sign in</button>
+                  </div>
+                  <span style="font-size:small">new costumer? <a href="#" class="text-primary">start here</a></span>
+                </div>
+              </div>
+              <div class="dropdown-row row">
+                <div class="col">
+                  <h6 class="fw-bold">your list</h6>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Lists</a></p>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Create a Wish List</a></p>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Wish from Any Website</a></p>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Baby Wishlist</a></p>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Discover Your Style</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Explore Showroom</a></p>
+                </div>
+                <div class="col">
+                  <h6 class="fw-bold">your account</h6>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Your Account</a></p>
+                    <p> <a class="text-secondary"  style="font-size:small; font-weight: 500;">Your Orders</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Wish List</a></p>
+                     <p><a class="text-secondary" style="font-size:small; font-weight: 500;">Your Recommendations</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Prime Membership</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Prime Video</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Subscribe & Save Items</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Memberships & Subscriptions</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Amazon Business Account</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Your Seller Account</a></p>
+                    <p> <a class="text-secondary" style="font-size:small; font-weight: 500;">Manage Your Content and Devices</a></p>
+                </div>
+              </div>
+            </div>
             </ul>
           </div>
           <!-- end sign-in -->
 
           <!-- order & returns -->
-          <a href="#" class="d-flex flex-column ms-lg-3 ms-2">
+          <a href="#" class="nav-order d-flex flex-column ms-lg-3 ms-2 border border-1 border-dark">
             <span style="font-size:small; font-weight:400;line-height:20%">Returns</span>
             <span>& Orders</span>
           </a>
           <!-- end order & returns -->
 
           <!-- view cart -->
-          <a href="#" class="ms-lg-3 ms-2 fs-2">
-            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+          <a href="#" class="ms-lg-3 ms-2 pe-lg-2 pe-1 fs-2">
+            <i class="nav-cart fa fa-cart-arrow-down border border-1 border-dark" aria-hidden="true"></i>
           </a>
           <!-- end view cart -->
         </div>
