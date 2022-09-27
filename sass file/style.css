@@ -22,11 +22,11 @@ body {
   background-color: rgb(44, 44, 62);
 }
 .header .nav-belt {
-  height: 65%;
+  height: 60%;
 }
 .header .nav-belt .nav-belt-left .logo {
-  width: 110px;
-  padding: 0.5rem;
+  width: 120px;
+  padding: 1rem 0.5rem 0.5rem;
 }
 .header .nav-belt .nav-belt-left .logo:hover {
   border: 1px solid #fff !important;
@@ -45,23 +45,23 @@ body {
   font-weight: 500;
   color: rgb(211, 211, 211);
 }
-.header .nav-belt-middle {
+.header .nav-belt .nav-belt-middle {
   flex: 1 1 auto;
 }
-.header .nav-belt-middle .nav-search {
+.header .nav-belt .nav-belt-middle .nav-search {
   flex: 1 1 auto;
 }
-.header .nav-belt-middle .nav-search .nav-form {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form {
   flex: 1 1 auto;
   border-radius: 5px;
   overflow: hidden;
 }
-.header .nav-belt-middle .nav-search .nav-form:focus-within {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form:focus-within {
   box-sizing: border-box;
   border: 0.2rem solid orange;
   box-shadow: 0rem 0rem 0.3rem #febd69;
 }
-.header .nav-belt-middle .nav-search .nav-form .select-optn .form-select {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .select-optn .form-select {
   border-radius: 0 !important;
   border: none !important;
   position: relative;
@@ -70,67 +70,78 @@ body {
   background-size: 0.6rem !important;
   height: 100%;
 }
-.header .nav-belt-middle .nav-search .nav-form .select-optn .form-select:focus {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .select-optn .form-select:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
-.header .nav-belt-middle .nav-search .nav-form .search-optn {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .search-optn {
   flex: 1 1 auto;
   border-left: 0.1rem solid rgb(223, 223, 223);
 }
-.header .nav-belt-middle .nav-search .nav-form .search-optn input {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .search-optn input {
   border: none;
   text-indent: 8px;
   padding: 11px;
 }
-.header .nav-belt-middle .nav-search .nav-form .search-optn input:focus {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .search-optn input:focus {
   outline: none;
 }
-.header .nav-belt-middle .nav-search .nav-form .search-btn .btn {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .search-btn .btn {
   border-radius: 0 !important;
   height: 100%;
 }
-.header .nav-belt-middle .nav-search .nav-form .search-btn .btn:focus {
+.header .nav-belt .nav-belt-middle .nav-search .nav-form .search-btn .btn:focus {
   outline: none !important;
   box-shadow: none !important;
   border: none !important;
 }
-.header .nav-belt-right .dropdown {
+.header .nav-belt .nav-belt-right .dropdown {
   border: 1px solid rgb(39, 39, 39);
-  padding: 0.5rem;
+  padding: 0.6rem 0.5rem 0.5rem;
 }
-.header .nav-belt-right .dropdown:hover {
+.header .nav-belt .nav-belt-right .dropdown:hover {
   border: 1px solid white !important;
   color: #fff;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-row p {
+.header .nav-belt .nav-belt-right .dropdown:hover .dropdown-menu.language {
+  display: block;
+  width: 230px !important;
+  top: 2.6rem !important;
+}
+.header .nav-belt .nav-belt-right .dropdown:hover .dropdown-menu.sign-in {
+  display: block;
+  width: 500px !important;
+  top: 3rem !important;
+  left: -13rem;
+}
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-row p {
   margin: 0;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-row p:hover > a {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-row p:hover > a {
   cursor: pointer;
   color: orange !important;
   text-decoration: underline;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item {
   background: none !important;
   color: black !important;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover {
   color: orange !important;
   text-decoration: underline;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover input[type=radio] {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item:hover input[type=radio] {
   background-color: orange;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active {
   color: orange !important;
   text-decoration: underline;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active input[type=radio] {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item.active input[type=radio] {
   background-color: orange;
 }
-.header .nav-belt-right .dropdown .dropdown-menu .dropdown-item input[type=radio] {
+.header .nav-belt .nav-belt-right .dropdown .dropdown-menu .dropdown-item input[type=radio] {
   /* remove standard background appearance */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -144,25 +155,27 @@ body {
   border: 2px solid #bbbbbb;
   border-radius: 50%;
 }
-.header .nav-belt-right .dropdown .language {
-  width: 300px !important;
-  top: 0.6rem !important;
-}
-.header .nav-belt-right .dropdown .sign-in {
-  width: 500px !important;
-  top: 0.7rem !important;
-  left: 8rem !important;
-}
-.header .nav-belt-right .nav-cart, .header .nav-belt-right .nav-order {
+.header .nav-belt .nav-belt-right .nav-cart, .header .nav-belt .nav-belt-right .nav-order {
   padding: 0.5rem;
 }
-.header .nav-belt-right .nav-cart:hover, .header .nav-belt-right .nav-order:hover {
+.header .nav-belt .nav-belt-right .nav-cart:hover, .header .nav-belt .nav-belt-right .nav-order:hover {
   border: 1px solid #fff !important;
+}
+.header .main-nav {
+  height: 40%;
+}
+.header .main-nav .row {
+  justify-content: space-between !important;
+}
+.header .main-nav .row .col {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 @media screen and (min-width: 620px) and (max-width: 920px) {
   .header {
-    height: 4.5rem;
+    height: 5.5rem;
     font-size: 13px !important;
   }
   .logo {
@@ -195,12 +208,24 @@ body {
     padding: 0.3rem !important;
     font-size: 13px !important;
   }
-  .dropdown #dropdown-menu {
+  .dropdown #language {
+    width: 180px !important;
+    top: 2rem !important;
+  }
+  .dropdown #sign-in {
     width: 400px !important;
-    top: 0.35rem !important;
+    top: 2.2rem !important;
   }
   .nav-order, .nav-cart {
     padding: 0.3rem !important;
     white-space: nowrap;
+  }
+  .main-nav {
+    height: 40%;
+  }
+  .main-nav .row .col {
+    padding: 2px !important;
+    margin-inline: 2px !important;
+    font-size: 12px !important;
   }
 }/*# sourceMappingURL=style.css.map */
