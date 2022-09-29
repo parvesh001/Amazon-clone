@@ -17,12 +17,12 @@ body {
 }
 
 .header {
-  font-size: 14px;
+  font-size: 16px;
   height: 6.8rem;
-  background-color: rgb(44, 44, 62);
+  background-color: rgb(38, 38, 55);
 }
 .header .nav-belt {
-  height: 60%;
+  height: 55%;
 }
 .header .nav-belt .nav-belt-left .logo {
   width: 120px;
@@ -162,21 +162,58 @@ body {
   border: 1px solid #fff !important;
 }
 .header .main-nav {
-  height: 40%;
+  height: 45%;
 }
-.header .main-nav .row {
-  justify-content: space-between !important;
+.header .main-nav .main-nav-menu {
+  width: 70%;
 }
-.header .main-nav .row .col {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+.header .main-nav .main-nav-menu div {
+  border: 1px solid transparent;
+}
+.header .main-nav .main-nav-menu div:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.header .main-nav .main-nav-downloadAPK {
+  width: 30%;
+}
+.header .main-nav .main-nav-downloadAPK .downloadAPK {
+  border: 1px solid transparent !important;
+}
+.header .main-nav .main-nav-downloadAPK .downloadAPK:hover {
+  cursor: pointer;
+  border: 1px solid #fff !important;
+}
+.header .main-nav .main-nav-downloadAPK .downloadAPK img {
+  width: 45px;
+}
+
+.hmenu {
+  max-width: 400px;
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+}
+.hmenu .hmenu-signIN {
+  background: rgb(38, 38, 55);
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  color: #fff;
+}
+.hmenu .hmenu-signIN div:nth-child(1) {
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
 }
 
 @media screen and (min-width: 620px) and (max-width: 920px) {
   .header {
-    height: 5.5rem;
-    font-size: 13px !important;
+    height: 5.6rem;
+    font-size: 14px !important;
   }
   .logo {
     width: 90px !important;
@@ -220,12 +257,13 @@ body {
     padding: 0.3rem !important;
     white-space: nowrap;
   }
-  .main-nav {
-    height: 40%;
+  .main-nav .main-nav-menu {
+    width: 58% !important;
   }
-  .main-nav .row .col {
-    padding: 2px !important;
-    margin-inline: 2px !important;
-    font-size: 12px !important;
+  .main-nav .main-nav-downloadAPK {
+    width: 42% !important;
+  }
+  .main-nav .main-nav-downloadAPK .downloadAPK img {
+    width: 35px !important;
   }
 }/*# sourceMappingURL=style.css.map */

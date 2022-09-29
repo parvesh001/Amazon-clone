@@ -17,11 +17,11 @@ body{
 }
 
 .header{
-	font-size: 14px;
+	font-size: 16px;
 	height: 6.8rem;
-	background-color:rgb(44, 44, 62);
+	background-color:rgb(38, 38, 55);
 	.nav-belt{
-		height:60%;
+		height:55%;
 		.nav-belt-left{
 			.logo{
 				width: 120px;
@@ -183,13 +183,33 @@ body{
 	}
 
 	.main-nav{
-		height: 40%;
-		.row{
-			justify-content: space-between!important;
-			.col{
-				max-width: fit-content;
+		height: 45%;
+		.main-nav-menu{
+			width: 70%;
+			div{
+				border:1px solid transparent;
+				&:hover{
+					border:1px solid #fff;
+					cursor: pointer;
+				}
 			}
 		}
+		.main-nav-downloadAPK{
+			width:30%;
+			.downloadAPK{
+				border: 1px solid transparent!important;
+				&:hover{
+					cursor: pointer;
+					border: 1px solid #fff!important;
+				}
+				img{
+					width:45px;
+				}
+
+			}
+		}
+		
+		
 	}
 	
 
@@ -197,10 +217,33 @@ body{
 	
 }
 
+.hmenu{
+	max-width: 400px;
+	width: 50vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left: 0;
+	overflow-y:scroll;
+	.hmenu-signIN{
+		background: rgb(38, 38, 55);
+		padding: .5rem;
+		padding-left: 1.5rem;
+		color:#fff;
+		div:nth-child(1){
+			padding:.1rem .5rem;
+			border-radius: 50%;
+			background: #fff;
+			color: #000;
+
+		}
+	}
+}
+
 @media screen and(min-width:620px) and(max-width:920px){
 	.header{
-      height: 5.5rem;
-	  font-size: 13px!important;
+      height: 5.6rem;
+	  font-size: 14px!important;
 	}
 	.logo {
 		width: 90px!important;
@@ -249,12 +292,15 @@ body{
 	}
 
 	.main-nav{
-		height: 40%;
-		.row{
-			.col{
-				padding: 2px !important;
-				margin-inline: 2px!important;
-				font-size: 12px!important;
+		.main-nav-menu{
+			width: 58%!important;
+		}
+		.main-nav-downloadAPK{
+			width:42%!important;
+			.downloadAPK{
+				img{
+					width: 35px !important;;
+				}
 			}
 		}
 	}
