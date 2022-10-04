@@ -11,6 +11,9 @@ a{
 		color:#fff;
 	}
 }
+li{
+	list-style: none;
+}
 
 body{
 	color:white;
@@ -219,16 +222,17 @@ body{
 
 .hmenu{
 	max-width: 400px;
-	width: 50vw;
-	height: 100vh;
-	position: fixed;
-	top:0;
-	left: 0;
-	overflow-y:scroll;
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    transition: all 1s ease;
+    left: 0;
+    // transform: translateX(-100%);
 	.hmenu-signIN{
 		background: rgb(38, 38, 55);
-		padding: .5rem;
-		padding-left: 1.5rem;
+		padding: 1rem;
+		padding-left: 2rem;
 		color:#fff;
 		div:nth-child(1){
 			padding:.1rem .5rem;
@@ -237,6 +241,32 @@ body{
 			color: #000;
 
 		}
+	}
+	.hmenu-content{
+		overflow:scroll;
+		max-height: 91%;
+		li{
+			h5{
+				padding: 0.6rem 0.6rem 0.6rem 2rem;
+			}
+			a{
+				display: inline-block;
+				width: 100%;
+				padding: 0.6rem 0.6rem 0.6rem 2rem;
+				background: #fff;
+				color:#000;
+				&:hover{
+					background-color: #e8e8e8;
+				}
+			}
+		}
+	}
+	.x-mark{
+       position: fixed;
+	   font-size: 2.5rem;
+	   color:#000;
+	   top:0;
+	   left:420px;
 	}
 }
 
