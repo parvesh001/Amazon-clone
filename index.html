@@ -363,7 +363,7 @@
         <div
           class="main-nav-menu d-flex align-items-center justify-content-around text-capitalize px-1 px-lg-2"
         >
-          <div class="px-1">
+          <div id="show-side-bar" class="px-1">
             <i class="fa-solid fa-bars"></i>
             <span>all</span>
           </div>
@@ -413,7 +413,14 @@
       </nav>
     </header>
 
-    <div class="hmenu text-dark bg-white">
+    <!-- hmenu-container -->
+    <div id="hmenu-container" class="hmenu-container">
+      <!-- hmenu-background -->
+      <div id="hmenu-background" class="hmenu-background"></div>
+      <!-- end hmenu-background -->
+
+       <!-- hmenu -->
+    <div id="hmenu" class="hmenu text-dark bg-white">
       <a href="#" class="hmenu-signIN d-flex text-capitalize w-100">
         <div class="me-2"><i class="fa-solid fa-user"></i></div>
         <h5 class="mb-0">hello, sign in</h5>
@@ -486,11 +493,15 @@
       </div>
 
       <!-- Xmark -->
-      <div class="x-mark">
+      <div id="x-mark" class="x-mark">
         <i class="fa-solid fa-xmark"></i>
       </div>
       <!-- End Xmark -->
     </div>
+    <!-- end hmenu  -->
+    </div>
+    <!-- end hmenu-container -->
+   
 
     <!-- JS LINK -->
     <script

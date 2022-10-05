@@ -192,50 +192,71 @@ body {
   width: 45px;
 }
 
-.hmenu {
+.hmenu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+.hmenu-container .hmenu-background {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.hmenu-container .hmenu {
   max-width: 400px;
   width: 50vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   top: 0;
-  transition: all 1s ease;
+  transition: transform 0.4s ease;
+  z-index: 999;
   left: 0;
+  transform: translateX(-100%);
 }
-.hmenu .hmenu-signIN {
+.hmenu-container .hmenu .hmenu-signIN {
   background: rgb(38, 38, 55);
   padding: 1rem;
   padding-left: 2rem;
   color: #fff;
 }
-.hmenu .hmenu-signIN div:nth-child(1) {
+.hmenu-container .hmenu .hmenu-signIN div:nth-child(1) {
   padding: 0.1rem 0.5rem;
   border-radius: 50%;
   background: #fff;
   color: #000;
 }
-.hmenu .hmenu-content {
+.hmenu-container .hmenu .hmenu-content {
   overflow: scroll;
   max-height: 91%;
 }
-.hmenu .hmenu-content li h5 {
+.hmenu-container .hmenu .hmenu-content li h5 {
   padding: 0.6rem 0.6rem 0.6rem 2rem;
 }
-.hmenu .hmenu-content li a {
+.hmenu-container .hmenu .hmenu-content li a {
   display: inline-block;
   width: 100%;
   padding: 0.6rem 0.6rem 0.6rem 2rem;
   background: #fff;
   color: #000;
 }
-.hmenu .hmenu-content li a:hover {
+.hmenu-container .hmenu .hmenu-content li a:hover {
   background-color: #e8e8e8;
 }
-.hmenu .x-mark {
+.hmenu-container .hmenu .x-mark {
+  cursor: pointer;
   position: fixed;
-  font-size: 2.5rem;
-  color: #000;
+  font-size: 2.2rem;
+  color: #fff;
   top: 0;
   left: 420px;
+  display: none;
 }
 
 @media screen and (min-width: 620px) and (max-width: 920px) {
