@@ -20,13 +20,25 @@ body {
   color: white;
 }
 
+.nav-background {
+  position: fixed;
+  top: 6.7rem;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  display: none;
+  z-index: 999;
+}
+
 .header {
   font-size: 16px;
   height: 6.8rem;
   background-color: rgb(38, 38, 55);
 }
 .header .nav-belt {
-  height: 55%;
+  height: 70%;
 }
 .header .nav-belt .nav-belt-left .logo {
   width: 120px;
@@ -64,6 +76,9 @@ body {
   box-sizing: border-box;
   border: 0.2rem solid orange;
   box-shadow: 0rem 0rem 0.3rem #febd69;
+}
+.header .nav-belt .nav-belt-middle .nav-search .nav-form:focus-within .nav-background {
+  display: block;
 }
 .header .nav-belt .nav-belt-middle .nav-search .nav-form .select-optn .form-select {
   border-radius: 0 !important;
@@ -260,6 +275,17 @@ body {
 }
 
 @media screen and (min-width: 620px) and (max-width: 920px) {
+  .nav-background {
+    position: absolute;
+    top: 5.6rem;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    display: none;
+    z-index: 999;
+  }
   .header {
     height: 5.6rem;
     font-size: 14px !important;
