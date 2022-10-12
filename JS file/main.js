@@ -18,3 +18,4 @@ xMark.addEventListener("click", () => {
     hMenuContainer.style.visibility = "hidden";
     hMenuBackground.style.opacity = "0";
 });
+
