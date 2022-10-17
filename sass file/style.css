@@ -49,6 +49,7 @@ body {
   cursor: pointer;
 }
 .header .nav-belt .nav-belt-left .user-address {
+  white-space: nowrap;
   padding: 0.5rem;
 }
 .header .nav-belt .nav-belt-left .user-address:hover {
@@ -175,6 +176,7 @@ body {
   border-radius: 50%;
 }
 .header .nav-belt .nav-belt-right .nav-cart, .header .nav-belt .nav-belt-right .nav-order {
+  white-space: nowrap;
   padding: 0.5rem;
 }
 .header .nav-belt .nav-belt-right .nav-cart:hover, .header .nav-belt .nav-belt-right .nav-order:hover {
@@ -183,18 +185,12 @@ body {
 .header .main-nav {
   height: 45%;
 }
-.header .main-nav .main-nav-menu {
-  width: 70%;
-}
 .header .main-nav .main-nav-menu div {
   border: 1px solid transparent;
 }
 .header .main-nav .main-nav-menu div:hover {
   border: 1px solid #fff;
   cursor: pointer;
-}
-.header .main-nav .main-nav-downloadAPK {
-  width: 30%;
 }
 .header .main-nav .main-nav-downloadAPK .downloadAPK {
   border: 1px solid transparent !important;

@@ -1,3 +1,5 @@
+//Desktop-First
+
 *,::before,::after{
     margin: 0;
     padding: 0;
@@ -47,6 +49,7 @@ body{
 				}
 			}
 			.user-address{
+				white-space:nowrap;
 		        padding:.5rem;
 				&:hover{
 					border:1px solid #fff!important;
@@ -192,6 +195,7 @@ body{
 				}
 			}
 			.nav-cart, .nav-order{
+				white-space: nowrap;
 				padding:.5rem;
 				&:hover{
 					border:1px solid #fff!important;
@@ -203,7 +207,7 @@ body{
 	.main-nav{
 		height: 45%;
 		.main-nav-menu{
-			width: 70%;
+			// width: 70%;
 			div{
 				border:1px solid transparent;
 				&:hover{
@@ -213,7 +217,7 @@ body{
 			}
 		}
 		.main-nav-downloadAPK{
-			width:30%;
+			// width:30%;
 			.downloadAPK{
 				border: 1px solid transparent!important;
 				&:hover{
@@ -381,3 +385,5 @@ body{
 		}
 	}
 }
+
+//Make it responsive from small to 750 and 900 to 1400
